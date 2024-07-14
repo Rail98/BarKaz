@@ -1,3 +1,5 @@
+#pip install aiogram aiosqlite sqlalchemy python-dotenv
+
 import asyncio
 from aiogram import Bot, Dispatcher
 
@@ -18,3 +20,5 @@ async def main():
 
 if __name__ == '__main__':
     asyncio.run(main())
+
+#Rail_<3
