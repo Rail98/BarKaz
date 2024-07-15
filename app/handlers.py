@@ -9,6 +9,7 @@ router = Router()
 
 @router.message(CommandStart()) #Command('start')
 async def cmd_start(message: Message):
+    print(message.from_user)
     await rq.set_user(message.from_user.id)
     await message.answer('Добро пожаловать в магазин кроссовок! Прошу выбрать команду', reply_markup=kb.kb_main)
     # await message.reply('=()')
